@@ -1,4 +1,5 @@
 import math
+import ast
 
 def thief_and_cops(grid, orientations, fov):
     # Fn to Calculate the range for cop's field of view
@@ -119,9 +120,9 @@ T = 'T'                             # When the Thief T in grid is not a string
 # orientations = [180, 150] 
 # fov = [60, 60]
 
-grid = input("Please enter the grid: ").replace("T", "'T'")
-orientations = input("Please enter the orientations: ")
-fov = input("Please enter the FoV values: ")
+grid = ast.literal_eval(input("Please enter the grid: ").replace("T", "'T'"))
+orientations = ast.literal_eval(input("Please enter the orientations: "))
+fov = ast.literal_eval(input("Please enter the FoV values: "))
 
 """"""""" Result """""""""
 result = thief_and_cops(grid, orientations, fov)
