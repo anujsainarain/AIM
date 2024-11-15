@@ -8,8 +8,8 @@ This repository contains solutions for the AIM perception and machine learning a
 
 **Clone the Repository**:
   ```bash
-  git clone https://github.com/anujsainarain/AIM.git
-  cd AIM
+    git clone https://github.com/anujsainarain/AIM.git
+    cd AIM
    ```
 
 ## Task 1
@@ -17,8 +17,8 @@ The script aims to return the list of cops who see the thief and the closest saf
 
 To run it
 ```bash
-   cd Task_1
-   python task1.py
+  cd Task_1
+  python task1.py
 ```
 Once you do it, you will be prompted to input the test cases.
 Note: If you want to instead put the test cases manually on the script, follow the comments provided in the input section.
