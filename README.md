@@ -28,7 +28,7 @@ The folder consists of script to track the ball in the ball juggling video along
 
 Please find the output .csv file and the video with the bounding boxes in the output folder.
 
-[![Output Tracking Video](Task_2/output_tracked_video.gif)](Task_2/output/output_tracking_video.mp4)
+[![Output Tracking Video](Task_2/output_tracked_video.gif)](Task_2/output)
 
 ## Solutions
 
