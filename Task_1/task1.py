@@ -28,6 +28,8 @@ def thief_and_cops(grid, orientations, fov):
     # Fn to map the visbility of the cop(s)
     def cop_visibility_map(grid, orientations, FoV):
         cop_positions, thief_position = find_positions(grid)
+        if thief_position is None:                                  # Where is thief?
+            raise ValueError("Thief ran away? Can't find thief if there is no thief to find. Result: [],[]")
         visible_cells = {cop_id: set() for cop_id in cop_positions} # Dictionary to store visible cells for each cop
         visible_thief = []
 
@@ -116,10 +118,12 @@ T = 'T'                             # When the Thief T in grid is not a string
 
 """"""""" Input """""""""
 # # Sample Input
+# # Uncomment to run it manually.
 # grid = [[0, 0, 0, 0, 0],[T, 0, 0, 0, 2],[0, 0, 0, 0, 0],[0, 0, 1, 0, 0],[0, 0, 0, 0, 0]]
 # orientations = [180, 150] 
 # fov = [60, 60]
 
+# Comment to run manually.
 grid = ast.literal_eval(input("Please enter the grid: ").replace("T", "'T'"))
 orientations = ast.literal_eval(input("Please enter the orientations: "))
 fov = ast.literal_eval(input("Please enter the FoV values: "))
